@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    formotion (1.1.5)
+      bubble-wrap (>= 1.1.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bubble-wrap (1.3.0)
+    rake (10.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bubble-wrap (>= 1.1.4)
+  formotion!
+  rake

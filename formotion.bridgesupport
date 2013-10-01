@@ -1,0 +1,228 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name='AbstractActionSheetPicker'>
+<method selector='addCustomButtonWithTitle:value:'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='id' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='configuredPickerView'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='customButtonPressed:'>
+<arg index='0' declared_type='id' name='sender' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='customButtons'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='hideCancel'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='initWithTarget:successAction:cancelAction:origin:'>
+<arg index='0' declared_type='id' name='target' type='@'/>
+<arg index='1' declared_type='SEL' name='successAction' type=':'/>
+<arg index='2' declared_type='SEL' name='cancelActionOrNil' type=':'/>
+<arg index='3' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='notifyTarget:didCancelWithAction:origin:'>
+<arg index='0' declared_type='id' name='target' type='@'/>
+<arg index='1' declared_type='SEL' name='cancelAction' type=':'/>
+<arg index='2' declared_type='id' name='origin' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='notifyTarget:didSucceedWithAction:origin:'>
+<arg index='0' declared_type='id' name='target' type='@'/>
+<arg index='1' declared_type='SEL' name='successAction' type=':'/>
+<arg index='2' declared_type='id' name='origin' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='pickerView'>
+<retval declared_type='int*' type='^i'/>
+</method>
+<method selector='presentFromRect'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='setCustomButtons:'>
+<arg index='0' declared_type='NSMutableArray*' name='customButtons' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHideCancel:'>
+<arg index='0' declared_type='BOOL' name='hideCancel' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPickerView:'>
+<arg index='0' declared_type='int*' name='pickerView' type='^i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPresentFromRect:'>
+<arg index='0' declared_type='int' name='presentFromRect' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showActionSheetPicker'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='viewSize'>
+<retval declared_type='int' type='i'/>
+</method>
+</class>
+<class name='ActionSheetDatePicker'>
+<method selector='eventForDatePicker:'>
+<arg index='0' declared_type='id' name='sender' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='initWithTitle:datePickerMode:selectedDate:target:action:origin:'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='id' name='datePickerMode' type='@'/>
+<arg index='2' declared_type='NSDate*' name='selectedDate' type='@'/>
+<arg index='3' declared_type='id' name='target' type='@'/>
+<arg index='4' declared_type='SEL' name='action' type=':'/>
+<arg index='5' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='showPickerWithTitle:datePickerMode:selectedDate:target:action:origin:' class_method='true'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='id' name='datePickerMode' type='@'/>
+<arg index='2' declared_type='NSDate*' name='selectedDate' type='@'/>
+<arg index='3' declared_type='id' name='target' type='@'/>
+<arg index='4' declared_type='SEL' name='action' type=':'/>
+<arg index='5' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='ActionSheetDistancePicker'>
+<method selector='initWithTitle:bigUnitString:bigUnitMax:selectedBigUnit:smallUnitString:smallUnitMax:selectedSmallUnit:target:action:origin:'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='NSString*' name='bigUnitString' type='@'/>
+<arg index='2' declared_type='NSInteger' name='bigUnitMax' type='i'/>
+<arg index='3' declared_type='NSInteger' name='selectedBigUnit' type='i'/>
+<arg index='4' declared_type='NSString*' name='smallUnitString' type='@'/>
+<arg index='5' declared_type='NSInteger' name='smallUnitMax' type='i'/>
+<arg index='6' declared_type='NSInteger' name='selectedSmallUnit' type='i'/>
+<arg index='7' declared_type='id' name='target' type='@'/>
+<arg index='8' declared_type='SEL' name='action' type=':'/>
+<arg index='9' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='showPickerWithTitle:bigUnitString:bigUnitMax:selectedBigUnit:smallUnitString:smallUnitMax:selectedSmallUnit:target:action:origin:' class_method='true'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='NSString*' name='bigUnitString' type='@'/>
+<arg index='2' declared_type='NSInteger' name='bigUnitMax' type='i'/>
+<arg index='3' declared_type='NSInteger' name='selectedBigUnit' type='i'/>
+<arg index='4' declared_type='NSString*' name='smallUnitString' type='@'/>
+<arg index='5' declared_type='NSInteger' name='smallUnitMax' type='i'/>
+<arg index='6' declared_type='NSInteger' name='selectedSmallUnit' type='i'/>
+<arg index='7' declared_type='id' name='target' type='@'/>
+<arg index='8' declared_type='SEL' name='action' type=':'/>
+<arg index='9' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='ActionSheetStringPicker'>
+<method selector='initWithTitle:rows:initialSelection:doneBlock:cancelBlock:origin:'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='NSArray*' name='strings' type='@'/>
+<arg index='2' declared_type='NSInteger' name='index' type='i'/>
+<arg index='3' declared_type='ActionStringDoneBlock' name='doneBlock' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<arg declared_type='NSInteger' type='i'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg index='4' declared_type='ActionStringCancelBlock' name='cancelBlockOrNil' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg index='5' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithTitle:rows:initialSelection:target:successAction:cancelAction:origin:'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='NSArray*' name='data' type='@'/>
+<arg index='2' declared_type='NSInteger' name='index' type='i'/>
+<arg index='3' declared_type='id' name='target' type='@'/>
+<arg index='4' declared_type='SEL' name='successAction' type=':'/>
+<arg index='5' declared_type='SEL' name='cancelActionOrNil' type=':'/>
+<arg index='6' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='onActionSheetCancel'>
+<retval declared_type='ActionStringCancelBlock' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<retval declared_type='void' type='v'/>
+</retval>
+</method>
+<method selector='onActionSheetDone'>
+<retval declared_type='ActionStringDoneBlock' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<arg declared_type='NSInteger' type='i'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</retval>
+</method>
+<method selector='setOnActionSheetCancel:'>
+<arg index='0' declared_type='ActionStringCancelBlock' name='onActionSheetCancel' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOnActionSheetDone:'>
+<arg index='0' declared_type='ActionStringDoneBlock' name='onActionSheetDone' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<arg declared_type='NSInteger' type='i'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showPickerWithTitle:rows:initialSelection:doneBlock:cancelBlock:origin:' class_method='true'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='NSArray*' name='strings' type='@'/>
+<arg index='2' declared_type='NSInteger' name='index' type='i'/>
+<arg index='3' declared_type='ActionStringDoneBlock' name='doneBlock' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<arg declared_type='NSInteger' type='i'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg index='4' declared_type='ActionStringCancelBlock' name='cancelBlock' function_pointer='true' type='@?'>
+<arg declared_type='ActionSheetStringPicker*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg index='5' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='showPickerWithTitle:rows:initialSelection:target:successAction:cancelAction:origin:' class_method='true'>
+<arg index='0' declared_type='NSString*' name='title' type='@'/>
+<arg index='1' declared_type='NSArray*' name='data' type='@'/>
+<arg index='2' declared_type='NSInteger' name='index' type='i'/>
+<arg index='3' declared_type='id' name='target' type='@'/>
+<arg index='4' declared_type='SEL' name='successAction' type=':'/>
+<arg index='5' declared_type='SEL' name='cancelActionOrNil' type=':'/>
+<arg index='6' declared_type='id' name='origin' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='DistancePickerView'>
+<method selector='addLabel:forComponent:forLongestString:'>
+<arg index='0' declared_type='NSString*' name='labeltext' type='@'/>
+<arg index='1' declared_type='NSUInteger' name='component' type='I'/>
+<arg index='2' declared_type='NSString*' name='longestString' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='updateLabel:forComponent:'>
+<arg index='0' declared_type='NSString*' name='labeltext' type='@'/>
+<arg index='1' declared_type='NSUInteger' name='component' type='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+</signatures>
